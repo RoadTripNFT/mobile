@@ -1,0 +1,75 @@
+/****** Checkbox ******/
+
+.knightley-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height:20px;
+    color:#545454;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.knightley-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    padding:1px;
+    border: 1px solid #cfcfcf;
+    border-radius:2px;
+}
+
+/* Hover state */
+.knightley-checkbox:hover input ~ .checkmark {
+    padding:0px;
+    border: 2px solid #D0C3FA;
+    border-radius: 2px;
+}
+
+/* Checked State */
+.knightley-checkbox input:checked ~ .checkmark {
+    padding:0px;
+    border: 2px solid #D0C3FA;
+    border-radius: 2px;
+    background-color: #8775C4;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.knightley-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.knightley-checkbox .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

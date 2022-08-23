@@ -1,0 +1,418 @@
+.nft-cover, .nft-learning{
+    margin-top: 20vh
+}
+
+.nft-cover img{
+    max-width: 250px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #545454;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #545454;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #545454;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #545454;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #545454;
+}
+
+h1.thin, h2.thin, h3.thin, h4.thin, h5.thin {
+    font-weight:400;
+}
+
+h1.regular, h2.regular, h3.regular, h4.regular, h5.regular {
+    font-weight:500;
+}
+
+.btn {
+    font-size:14px;
+    font-weight:400;
+    border-radius:4px;
+    line-height:18px;
+    padding:10px 24px;
+    border:1px solid transparent;
+}
+
+.btn-blue {
+    background-color: #638CE2;
+    border-color: #638CE2;
+    color: #ffffff;
+}
+
+.btn-blue:hover {
+    background-color: #456DD2;
+    border-color: #456DD2;
+    color: #ffffff;
+}
+
+.gray-middlest {
+    color: #828282;
+}
+.gray-strong {
+    color: #545454;
+}
+
+.continue-button{
+    background-color: #8775C3;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    width: 230px;
+}
+
+.onboarding-page-wrapper {
+    width: 100vw;
+    height: 100%;
+    background-color: #FFEBC1;
+}
+
+.onboarding-card {
+    position:absolute;
+    right: 5em;
+    top: 10vh;
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em 2em 1em;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px rgba(37, 40, 43, 0.12);
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.onboarding-card.no-padding {
+    padding: 0em;
+}
+
+.onboarding-card-logo {
+    height: 40px;
+    display: block;
+    margin: 0 auto 1.5em auto;
+}
+
+.onboarding-card-logo img {
+    height: 40px;
+}
+
+.onboarding-purchase-img {
+    width: calc(100vw - 2em);
+    height: calc(100vw - 2em);
+    margin: 0em 0em 0em 0em;
+    text-align: center;
+}
+
+.onboarding-purchase-img img, .onboarding-purchase-img video {
+    /* max-width: 250px; */
+    /* border-radius: 12px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.onboarding-landing-card {
+    background-color: #FFFFFF;
+    border-radius: 24px 24px 0px 0px;
+    padding: 2em 2em 0em 2em;
+    flex: 1;
+    overflow-y:auto;
+    overflow-x:hidden;
+    z-index: 3;
+    margin-top: -1em;
+}
+
+.onboarding-landing-card h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0em;
+}
+
+.onboarding-purchase-content {
+    padding: 0em 1em;
+    flex: 1;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+.onboarding-purchase-location {
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+
+.landing-card-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.landing-card-map-icon {
+    flex: 0 0;
+}
+
+.onboarding-purchase-location span, .landing-card-location {
+    color: #828282;
+    padding-left: 0.5em;
+    width: 75%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 0 0 75%;
+}
+
+.landing-card-price {
+    flex: 1 1;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.onboarding-card-action {
+    flex: 0 0;
+    margin-top: 1em;
+    padding: 0em 0em 2em 0em;
+    text-align: center;
+}
+
+.onboarding-card-action .btn {
+    width: 250px;
+}
+
+.onboarding-learn-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+.onboarding-learn-logo img {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.onboarding-learn-card {
+    background-color: #FFFFFF;
+    border-radius: 24px 24px 0px 0px;
+    padding: 0em 2em 0em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    overflow-y:auto;
+    overflow-x:hidden;
+    text-align: center;
+}
+
+.onboarding-learn-card h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 0em;
+}
+
+.onboarding-learn-img {
+    width: 100vw;
+    height: 60vh;
+    margin: 0em;
+    text-align: center;
+}
+
+.onboarding-purchase-img img {
+    /* max-width: 250px; */
+    /* border-radius: 12px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .onboarding-card {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100%;
+        border-radius: 0em;
+    }
+}
+
+.onboarding-form-wrapper {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.onboarding-card-header {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #f35d71;
+    position: relative;
+}
+
+.onboarding-card-header img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.onboarding-card-header-back {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px rgba(37, 40, 43, 0.12);
+    border-radius: 8px;
+    padding: 0em 0.5em;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.onboarding-title {
+    margin-bottom: 0.5em;
+}
+
+.onboarding-form-card {
+    background-color: #FFFFFF;
+    border-radius: 24px 24px 0px 0px;
+    padding: 2em 2em 0em 2em;
+    overflow-y:auto;
+    overflow-x:hidden;
+    z-index: 3;
+    margin-top: -1em;
+}
+
+.onboarding-form-card h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0em;
+}
+
+.onboarding-action {
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+
+
+
+.onboarding-success-nft img {
+    display: block;
+    width: 75vw;
+    border-radius: 8px;
+    margin: 1em auto;
+}
+
+.onboarding-collection-container {
+    width: 100%;
+}
+
+.onboarding-collection-nft-card {
+    display: inline-block;
+    width: 25%;
+    margin-right: 0.75em;
+    position: relative;
+}
+
+.onboarding-collection-nft-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 8px;
+    background-color: rgba(84, 84, 84, 0.5);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.onboarding-collection-nft-card img {
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/****** NFT Card - Landing Page Version ******/
+
+.nft-card-landing {
+    width: 100%;
+    height: 100%;
+}
+
+.nft-card-graphic {
+    width: calc(100vw - 2em);
+    height: 50vh;
+    margin: 0em 0em 0em 0em;
+    text-align: center;
+}
+
+.nft-card-graphic img, .nft-card-graphic video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+h1.nft-card-title {
+    margin-top: 0.5em;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0em;
+    color: #545454;
+}
+
+.nft-card-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.nft-card-map-icon {
+    flex: 0 0;
+}
+
+.nft-card-location {
+    color: #828282;
+    padding-left: 0.5em;
+    width: 75%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 0 0 75%;
+}
+
+.nft-card-description {
+    color: #545454;
+    font-size: 16px;
+}

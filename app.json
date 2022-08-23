@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "roadtripnft",
+    "slug": "roadtripnft",
+    "version": "1.0.1",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.roadtripnft.app",
+      "config": {
+        "googleMapsApiKey": "AIzaSyB4T72k4iOexyWj16wFGGwkEYmP06J25-Q"
+      },
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "UIBackgroundModes": [
+          "fetch"
+        ],
+        "CFBundleAllowMixedLocalizations": true,
+        "NSLocationWhenInUseUsageDescription": "Requires geolocation so you can discover, collect and store nearby souvenirs on the map."
+      }
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#FDDFE3"
+    },
+    "icon": "./assets/icon.png",
+    "extra": {
+      "eas": {
+        "projectId": "a9a97437-713a-4fdb-aefd-ab24fd375cdb"
+      }
+    }
+  }
+}
