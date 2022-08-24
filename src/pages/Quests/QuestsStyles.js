@@ -42,7 +42,6 @@ export default StyleSheet.create({
     questItemContent: {
         paddingVertical: 7,
         paddingHorizontal: 14,
-        alignItems: 'center'
     },
     questDetailWrapper: {
         flex: 1,

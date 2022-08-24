@@ -24,11 +24,15 @@ const QuestDetail = ({ route, navigation, styles }) => {
     useEffect(() => {
         if (selectedQuest) {
             fetchQuestNfts()
-
-            setTotalCount(selectedQuest?.nfts?.length || 0)
-            setCollectedCount(selectedQuest?.nfts?.filter(n => n.owned).length || 0)
         }
     }, [selectedQuest])
+
+    useEffect(() => {
+        if (nfts) {
+            setTotalCount(nfts?.length || 0)
+            setCollectedCount(nfts?.filter(n => n.owned).length || 0)
+        }
+    }, [nfts])
 
     const fetchQuestNfts = async () => {
         const url = `https://api.roadtripnft.com/quests/get/nfts-by-quest`;

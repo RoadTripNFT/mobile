@@ -21,8 +21,8 @@ const QuestItem = ({ navigation, styles, item }) => {
             </View>
             <Image style={questsStyles.questItemImage} source={{ uri: item.questCoverImage }} />
             <View style={questsStyles.questItemContent}>
-                <Text style={[styles.h6, styles.bold, styles.grayStrongest]}>{item.name}</Text>
-                <Text style={[styles.grayMiddlest]}>{item.location}</Text>
+                <Text style={[styles.h6, styles.bold, styles.grayStrongest, { textAlign: 'center' }]}>{item.name}</Text>
+                <Text style={[styles.grayMiddlest, { textAlign: 'center' }]}>{item.location}</Text>
             </View>
         </TouchableOpacity>
     )

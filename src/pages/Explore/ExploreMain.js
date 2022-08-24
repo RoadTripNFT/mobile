@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
-import { useIsFocused } from "@react-navigation/native";
+import { useIsFocused, useFocusEffect } from "@react-navigation/native";
 import { useSelector } from 'react-redux'
 import { Dimensions, Image, Text, TouchableOpacity, View } from 'react-native';
 import * as Location from 'expo-location';
@@ -48,9 +48,14 @@ const ExploreMain = ({ route, navigation, styles }) => {
     const [selectedNft, setSelectedNft] = useState(null)
     const [expandedNft, setExpandedNft] = useState(null)
 
+    useFocusEffect(
+        React.useCallback(() => {
+            fetchNearbyNfts()
+        }, [])
+    );
+
     useEffect(() => {
         startForegroundTracking()
-        fetchNearbyNfts()
 
         return () => {
             foregroundSubscription?.remove()

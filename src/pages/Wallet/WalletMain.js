@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import { useFocusEffect } from '@react-navigation/native';
 import { FlatList, SafeAreaView, View, Text, ActivityIndicator } from 'react-native'
 import { useSelector } from 'react-redux'
 import WalletItem from './WalletItem'
@@ -12,11 +13,12 @@ const WalletMain = ({ navigation, styles }) => {
 
     const [collectedNfts, setCollectedNfts] = useState([])
     const [selectedNft, setSelectedNft] = useState(null)
-    
-    useEffect(() => {
-        fetchNftData();
 
-    }, [])
+    useFocusEffect(
+        React.useCallback(() => {
+          fetchNftData()
+        }, [])
+    );
 
     const fetchNftData = async()=>{
         const url = `https://api.roadtripnft.com/nft/get/user-wallet`;

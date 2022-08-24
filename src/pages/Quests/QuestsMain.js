@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import { useFocusEffect } from '@react-navigation/native';
 import { useSelector } from 'react-redux'
 import { ActivityIndicator, FlatList, SafeAreaView, Text, View } from 'react-native'
 import questsStyles from './QuestsStyles'
@@ -12,10 +13,11 @@ const QuestsMain = ({ navigation, styles }) => {
     const [quests, setQuests] = useState([])
     const [selectedQuest, setSelectedQuest] = useState(null)
     
-    useEffect(() => {
-        fetchQuests();
-
-    }, [])
+    useFocusEffect(
+        React.useCallback(() => {
+            fetchQuests()
+        }, [])
+    );
 
     const fetchQuests = async()=>{
         const url = `https://api.roadtripnft.com/quests/get/all`;
